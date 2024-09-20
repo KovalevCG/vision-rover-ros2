@@ -22,7 +22,7 @@ Currently, this repository contains **early-stage** resources, including a photo
 ---
 
 ### Photo
-![Robot Photo](link_to_your_photo_here)  
+![Robot Photo](vision-robot-01.jpg)  
 *(Placeholder for the current version of the robot)*
 
 ---
