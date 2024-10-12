@@ -38,6 +38,7 @@ Currently, this repository contains **early-stage** resources, including a photo
 ## Project Stages:
 ### Stage 2: Robot Movement Test (Completed)
 - The robot successfully moves, controlled by an Arduino.
+  
 ![Stage 2 - Robot movement demonstration](Documentation/gifs/stage_02.gif)
 ### Stage 1: Robot Assembly (Completed)
 #### The current assembly includes a four-wheel chassis with the following components:
