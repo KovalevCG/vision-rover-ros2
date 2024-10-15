@@ -1,0 +1,2 @@
+nmcli d wifi connect "TP-LINK_3F31C8" password "aroaroaro"
+nmcli d wifi connect "Tiko's House" password "TheYellowHouse"
