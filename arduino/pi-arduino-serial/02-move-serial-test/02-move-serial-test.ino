@@ -26,8 +26,8 @@ void setup() {
   digitalWrite(IN2, LOW);
   digitalWrite(IN3, LOW);
   digitalWrite(IN4, LOW);
-  analogWrite(ENA, 100);
-  analogWrite(ENB, 100);
+  analogWrite(ENA, 70);
+  analogWrite(ENB, 70);
 }
 
 void loop() {
@@ -36,38 +36,64 @@ void loop() {
     char command = Serial.read();
     switch (command) {
       case 'f':  // Forward
-        digitalWrite(IN1, HIGH);
-        digitalWrite(IN2, LOW);
-        digitalWrite(IN3, HIGH);
-        digitalWrite(IN4, LOW);
-        break;
-      case 'b':  // Backward
         digitalWrite(IN1, LOW);
         digitalWrite(IN2, HIGH);
         digitalWrite(IN3, LOW);
         digitalWrite(IN4, HIGH);
+        analogWrite(ENA, 80);
+        analogWrite(ENB, 80);
+        break;
+      case 'b':  // Backward
+        digitalWrite(IN1, HIGH);
+        digitalWrite(IN2, LOW);
+        digitalWrite(IN3, HIGH);
+        digitalWrite(IN4, LOW);
+        analogWrite(ENA, 80);
+        analogWrite(ENB, 80);
         break;
       case 'l':  // Left turn
         digitalWrite(IN1, LOW);
         digitalWrite(IN2, HIGH);
         digitalWrite(IN3, HIGH);
         digitalWrite(IN4, LOW);
+        analogWrite(ENA, 130);
+        analogWrite(ENB, 130);
+        delay(150);
+        analogWrite(ENA, 0);
+        analogWrite(ENB, 0);
         break;
       case 'r':  // Right turn
         digitalWrite(IN1, HIGH);
         digitalWrite(IN2, LOW);
         digitalWrite(IN3, LOW);
         digitalWrite(IN4, HIGH);
+        analogWrite(ENA, 130);
+        analogWrite(ENB, 130);
+        delay(150);
+        analogWrite(ENA, 0);
+        analogWrite(ENB, 0);
         break;
       case 's':  // Stop
         digitalWrite(IN1, LOW);
         digitalWrite(IN2, LOW);
         digitalWrite(IN3, LOW);
         digitalWrite(IN4, LOW);
+        analogWrite(ENA, 0);
+        analogWrite(ENB, 0);
         break;
     }
   }
 }
+
+// void gradualStartMove(int maxSpeed) {
+
+//   // Slowly increase speed from 0 to maxSpeed
+//   for (int speed = 50; speed <= maxSpeed; speed += 5) {
+//     analogWrite(ENA, speed);  // Set PWM for Motor A
+//     analogWrite(ENB, speed);  // Set PWM for Motor B
+//     delay(15);  // Small delay for gradual acceleration
+//   }
+// }
 
 
 

@@ -7,9 +7,23 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(rclpy REQUIRED)  # NEW # Add rclpy dependency
+find_package(geometry_msgs REQUIRED)  # NEW # Add geometry_msgs dependency
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
+
+
+# NEW # Install the Python script
+install(
+  PROGRAMS scripts/motor_controller.py  # Specify the location of the script
+  DESTINATION lib/${PROJECT_NAME}  # Install it in the package library directory
+)
+
+install(
+  DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -23,8 +37,6 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-install(DIRECTORY launch
- DESTINATION share/${PROJECT_NAME}
-)
+
 
 ament_package()
