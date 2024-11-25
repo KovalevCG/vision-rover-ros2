@@ -19,10 +19,13 @@ This is a **work-in-progress** project aimed at developing a four-wheel robot fo
 Currently, this repository contains **early-stage** resources, including a photo of the robot and some initial code.
 
 
+
+
 ---
 
-### Photo
-![Robot Photo](vision-robot-01.jpg)  
+### Final Robot Video
+[![Final Robot Video](https://img.youtube.com/vi/dcy8bRz3WHk/0.jpg)](https://youtu.be/dcy8bRz3WHk)
+
 *(Placeholder for the current version of the robot)*
 
 ---
