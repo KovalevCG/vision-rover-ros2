@@ -1,4 +1,4 @@
-# ROS2 Vision Rover (In Progress)
+# ROS2 Vision Rover
 
 ### Technologies
 - ROS2
@@ -10,38 +10,19 @@
 
 ---
 
-This is a **work-in-progress** project aimed at developing a four-wheel robot for environment mapping and vision-based tasks. The robot integrates:
+This is a project aimed at developing a four-wheel robot for environment mapping and vision-based tasks. The robot integrates:
 
 - **LiDAR** for environment mapping
 - **Camera** for vision processing
 - **Remote control** capabilities
 
-Currently, this repository contains **early-stage** resources, including a photo of the robot and some initial code.
-
-
-
 
 ---
 
-### Final Robot Video
+### Final Robot Video Demonstration - https://youtu.be/dcy8bRz3WHk
 [![Final Robot Video](https://img.youtube.com/vi/dcy8bRz3WHk/0.jpg)](https://youtu.be/dcy8bRz3WHk)
 
-*(Placeholder for the current version of the robot)*
-
 ---
-
-
-### Upcoming Features
-- Full integration of ROS2 with LiDAR and camera modules
-- Remote control functionality
-- Detailed project documentation
-
----
-
-
-
-
-
 
 
 ## Project Stages:
@@ -59,7 +40,30 @@ Plan potential improvements and extensions to the project.
 - **Autonomous Modes:** Develop fully autonomous behaviors using LIDAR and camera data.
 _______________
 
-### Stage 3: Robot Movement Test (Completed)
+
+### Stage 10: Documentation and GitHub Setup
+Objective: Document the entire project and publish it to GitHub.
+
+### Stage 9: Troubleshooting and Optimization
+Objective: Identify and resolve any issues related to hardware or software integration.
+
+### Stage 8: System Testing and Integration
+Objective: Run all components together to ensure seamless communication and control.
+
+### Stage 7: Adding the Camera Integration
+Objective: Set up a camera to stream live video and integrate it into the ROS2 ecosystem.
+
+### Stage 6: Integrating RPLIDAR A1 with ROS2
+Objective: Configure and launch the RPLIDAR driver to publish LIDAR data on ROS2 topics.
+
+### Stage 5: Arduino Motor Control Setup
+Objective: Upload motor control logic to the Arduino for communication with the Raspberry Pi.
+
+### Stage 4: ROS2 Setup on Raspberry Pi
+Objective: Install ROS2 and configure the workspace for communication between components.
+
+### Stage 3: Testing Robot Movements After Assembly (Completed)
+Objective: Verify that the motors and wheels function correctly before integrating additional sensors and software.
 - The robot successfully moves, controlled by an Arduino.
 ![Stage 2 - Robot movement demonstration](Documentation/gifs/stage_02.gif)
 
